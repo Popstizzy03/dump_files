@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadEl Jewelry</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f1e7;
+            color: #333;
+        }
+        
+        /* Header styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .header-icons img {
+            width: 24px;
+            margin-left: 15px;
+        }
+        
+        /* Hero section styles */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 20px;
+        }
+        .hero-text {
+            flex: 1;
+        }
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #c4a484;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .hero-images {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .hero-images img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+        
+        /* Features section styles */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+        .feature {
+            text-align: center;
+        }
+        .feature img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        
+        /* Product categories styles */
+        .categories {
+            padding: 50px 20px;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .category {
+            text-align: center;
+        }
+        .category img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        /* Featured products styles */
+        .featured-products {
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-images {
+                justify-content: center;
+                margin-top: 30px;
+            }
+            .features {
+                flex-wrap: wrap;
+            }
+            .feature {
+                flex-basis: 50%;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">RadEl</div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <img src="/api/placeholder/24/24" alt="Search">
+            <img src="/api/placeholder/24/24" alt="Cart" id="cart-icon">
+            <img src="/api/placeholder/24/24" alt="User">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Experience the Brilliance of Craftsmanship</h1>
+            <p>Discover a world where beauty meets craftsmanship, where every piece of jewelry tells a story.</p>
+            <a href="#shop" class="cta-button">Shop Now</a>
+        </div>
+        <div class="hero-images">
+            <img src="/api/placeholder/200/200" alt="Jewelry 1">
+            <img src="/api/placeholder/200/200" alt="Jewelry 2">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="/api/placeholder/50/50" alt="Certified">
+            <p>Certified</p>
+        </div>
+        <div class="feature">
+            <img src="/api/placeholder/50/50" alt="Secure">
+            <p>Secure</p>
+        </div>
+        <div class="feature">
+            <img src="/api/placeholder/50/50" alt="Shipping">
+            <p>Shipping</p>
+        </div>
+        <div class="feature">
+            <img src="/api/placeholder/50/50" alt="Transparent">
+            <p>Transparent</p>
+        </div>
+    </section>
+
+    <section class="categories" id="shop">
+        <h2>Sparkle in Love</h2>
+        <div class="category-grid">
+            <div class="category">
+                <img src="/api/placeholder/200/200" alt="Necklaces">
+                <h3>Necklaces</h3>
+            </div>
+            <div class="category">
+                <img src="/api/placeholder/200/200" alt="Earrings">
+                <h3>Earrings</h3>
+            </div>
+            <div class="category">
+                <img src="/api/placeholder/200/200" alt="Bracelets">
+                <h3>Bracelets</h3>
+            </div>
+            <div class="category">
+                <img src="/api/placeholder/200/200" alt="Rings">
+                <h3>Rings</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="/api/placeholder/200/200" alt="Product 1">
+                <h3>Diamond Necklace</h3>
+                <p>$999.99</p>
+                <button class="add-to-cart" data-id="1" data-name="Diamond Necklace" data-price="999.99">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="/api/placeholder/200/200" alt="Product 2">
+                <h3>Gold Earrings</h3>
+                <p>$599.99</p>
+                <button class="add-to-cart" data-id="2" data-name="Gold Earrings" data-price="599.99">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Cart functionality
+        let cart = [];
+        const cartIcon = document.getElementById('cart-icon');
+        const cartModal = document.getElementById('cart-modal');
+        const closeCart = document.getElementById('close-cart');
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+
+        // Add to cart
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const product = {
+                    id: button.dataset.id,
+                    name: button.dataset.name,
+                    price: parseFloat(button.dataset.price),
+                    quantity: 1
+                };
+                addToCart(product);
+                updateCartDisplay();
+            });
+        });
+
+        function addToCart(product) {
+            const existingProduct = cart.find(item => item.id === product.id);
+            if (existingProduct) {
+                existingProduct.quantity++;
+            } else {
+                cart.push(product);
+            }
+        }
+
+        function updateCartDisplay() {
+            cartItems.innerHTML = '';
+            let total = 0;
+            cart.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.textContent = `${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`;
+                cartItems.appendChild(itemElement);
+                total += item.price * item.quantity;
+            });
+            cartTotal.textContent = total.toFixed(2);
+        }
+
+        // Open cart modal
+        cartIcon.addEventListener('click', () => {
+            cartModal.style.display = 'block';
+            updateCartDisplay();
+        });
+
+        // Close cart modal
+        closeCart.addEventListener('click', () => {
+            cartModal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (event) => {
+            if (event.target === cartModal) {
+                cartModal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
