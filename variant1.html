@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jewels</title>
+    <style>
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f1e7;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.header-icons img {
+    margin-left: 15px;
+    height: 25px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #f0e9df;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero-text button {
+    background-color: #c4a484;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-images {
+    display: flex;
+    align-items: center;
+}
+
+.hero-images img {
+    margin-left: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.hero-images .circular {
+    border-radius: 50%;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    height: 50px;
+}
+
+.feature p {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f1e7;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.category a {
+    text-decoration: none;
+    color: #c4a484;
+    font-weight: bold;
+}
+
+.featured-products {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.product {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.product p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product button {
+    background-color: #c4a484;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 40px 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-info img {
+    height: 50px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-media img {
+    margin-left: 15px;
+    height: 20px;
+}
+
+.subscribe input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.subscribe button {
+    background-color: #c4a484;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.png" alt="RadEl Logo"></div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About Us</a>
+            <a href="#">Pages</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>🔍</button>
+        </div>
+        <div class="header-icons">
+            <img src="cart-icon.png" alt="Cart">
+            <img src="user-icon.png" alt="User">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Experience the Brilliance of Craftsmanship</h1>
+            <p>Discover a world where beauty meets craftsmanship, where every piece of jewelry tells a story.</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="hero-images">
+            <img src="main-jewelry.jpg" alt="Jewelry">
+            <img src="circular-frame.jpg" alt="Jewelry Closeup" class="circular">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="certified-icon.png" alt="Certified">
+            <p>Certified</p>
+        </div>
+        <div class="feature">
+            <img src="secure-icon.png" alt="Secure">
+            <p>Secure</p>
+        </div>
+        <div class="feature">
+            <img src="shipping-icon.png" alt="Shipping">
+            <p>Shipping</p>
+        </div>
+        <div class="feature">
+            <img src="transparent-icon.png" alt="Transparent">
+            <p>Transparent</p>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="category">
+            <img src="necklaces.jpg" alt="Necklaces">
+            <h3>Necklaces</h3>
+            <a href="#">View Full Collection</a>
+        </div>
+        <div class="category">
+            <img src="earrings.jpg" alt="Earrings">
+            <h3>Earrings</h3>
+            <a href="#">View Full Collection</a>
+        </div>
+        <div class="category">
+            <img src="bracelets.jpg" alt="Bracelets">
+            <h3>Bracelets</h3>
+            <a href="#">View Full Collection</a>
+        </div>
+        <div class="category">
+            <img src="rings.jpg" alt="Rings">
+            <h3>Rings</h3>
+            <a href="#">View Full Collection</a>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="product-carousel">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h4>Product Name 1</h4>
+                <p>$100.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h4>Product Name 2</h4>
+                <p>$120.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="brand-info">
+                <img src="footer-logo.png" alt="RadEl Logo">
+                <p>Your trusted source for fine jewelry.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="social-media">
+                <img src="facebook-icon.png" alt="Facebook">
+                <img src="twitter-icon.png" alt="Twitter">
+                <img src="instagram-icon.png" alt="Instagram">
+            </div>
+            <div class="subscribe">
+                <input type="email" placeholder="Subscribe to our newsletter">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for Add to Cart functionality
+const cart = [];
+
+function addToCart(product) {
+    cart.push(product);
+    updateCart();
+}
+
+function updateCart() {
+    const cartList = document.querySelector('.cart-list');
+    cartList.innerHTML = ''; // Clear current cart
+
+    cart.forEach((item) => {
+        const cartItem = document.createElement('div');
+        cartItem.textContent = `${item.name} - $${item.price}`;
+        cartList.appendChild(cartItem);
+    });
+}
+
+    </script>
+</body>
+</html>
